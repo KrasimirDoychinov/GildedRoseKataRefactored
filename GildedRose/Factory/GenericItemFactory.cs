@@ -1,33 +1,33 @@
-﻿using GildedRose.Items;
-using GildedRoseKata;
+﻿using GildedRose.Models;
+using GildedRoseKata.Models;
 
-namespace GildedRose
+namespace GildedRose.Factory
 {
     public static class GenericItemFactory
     {
         public static GenericItem ParseItem(Item item)
         {
-            GenericItem updatedItem;
+            GenericItem parsedItem;
             switch (item.Name)
             {
                 case "Aged Brie":
-                    updatedItem = new AgedBrieItem(item);
+                    parsedItem = new AgedBrieItem(item);
                     break;
                 case string name when name.Contains("Backstage passes"):
-                    updatedItem = new BackstageItem(item);
+                    parsedItem = new BackstageItem(item);
                     break;
                 case "Sulfuras, Hand of Ragnaros":
-                    updatedItem = new SulfurasItem(item);
+                    parsedItem = new SulfurasItem(item);
                     break;
                 case string name when name.Contains("Conjured"):
-                    updatedItem = new ConjuredItem(item);
+                    parsedItem = new ConjuredItem(item);
                     break;
                 default:
-                    updatedItem = new GenericItem(item);
+                    parsedItem = new GenericItem(item);
                     break;
             }
 
-            return updatedItem;
+            return parsedItem;
         }
     }
 }

@@ -1,11 +1,10 @@
-﻿using GildedRose.Items;
-using GildedRoseKata;
+﻿using GildedRoseKata.Models;
 
-namespace GildedRose
+namespace GildedRose.Models
 {
     internal class ConjuredItem : GenericItem
     {
-        public ConjuredItem(Item item) 
+        public ConjuredItem(Item item)
             : base(item)
         {
         }

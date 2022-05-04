@@ -1,12 +1,12 @@
-﻿using GildedRoseKata;
+﻿using GildedRoseKata.Models;
 
-namespace GildedRose.Items
+namespace GildedRose.Models
 {
     public class BackstageItem : GenericItem
     {
         private int ammount = 1;
 
-        public BackstageItem(Item item) 
+        public BackstageItem(Item item)
             : base(item)
         {
         }

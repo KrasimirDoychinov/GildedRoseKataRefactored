@@ -1,6 +1,7 @@
 ﻿using GildedRoseKata;
+using GildedRoseKata.Models;
 
-namespace GildedRose.Items
+namespace GildedRose.Models
 {
     public class GenericItem : Item
     {

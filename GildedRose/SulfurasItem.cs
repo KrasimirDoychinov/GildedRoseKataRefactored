@@ -1,11 +1,11 @@
-﻿using GildedRose.Items;
-using GildedRoseKata;
+﻿using GildedRose.Models;
+using GildedRoseKata.Models;
 
 namespace GildedRose
 {
     public class SulfurasItem : GenericItem
     {
-        public SulfurasItem(Item item) 
+        public SulfurasItem(Item item)
             : base(item)
         {
         }

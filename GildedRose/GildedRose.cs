@@ -1,5 +1,7 @@
 ﻿using GildedRose;
-using GildedRose.Items;
+using GildedRose.Factory;
+using GildedRose.Models;
+using GildedRoseKata.Models;
 using System.Collections.Generic;
 
 namespace GildedRoseKata

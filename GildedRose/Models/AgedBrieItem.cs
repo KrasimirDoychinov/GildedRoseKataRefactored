@@ -1,11 +1,10 @@
-﻿using GildedRose.Items;
-using GildedRoseKata;
+﻿using GildedRoseKata.Models;
 
-namespace GildedRose
+namespace GildedRose.Models
 {
     public class AgedBrieItem : GenericItem
     {
-        public AgedBrieItem(Item item) 
+        public AgedBrieItem(Item item)
             : base(item)
         {
         }
